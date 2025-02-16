@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя перша сторінка</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .adaptive-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .adaptive-box {
+            height: 200px;
+            background-color: lightcoral;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .adaptive-container {
+                flex-direction: column;
+            }
+        }
+        @media (min-width: 768px) {
+            .adaptive-container {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Вітаю на моєму сайті!</h1>
+    <p>Це мій перший веб-документ.</p>
+    
+    <h2>Корисні посилання</h2>
+    <ul>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.wikipedia.org/">Wikipedia</a></li>
+        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+    </ul>
+    
+    <img src="https://via.placeholder.com/300" alt="Зображення" width="300">
+    
+    <button class="styled-button">Натисни мене</button>
+    
+    <ul class="colored-list">
+        <li>Елемент 1</li>
+        <li>Елемент 2</li>
+        <li>Елемент 3</li>
+        <li>Елемент 4</li>
+        <li>Елемент 5</li>
+        <li>Елемент 6</li>
+    </ul>
+    
+    <div id="full-width-text">Це текстовий блок, вирівняний по центру</div>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    
+    <div class="adaptive-container">
+        <div class="adaptive-box">Блок 1</div>
+        <div class="adaptive-box">Блок 2</div>
+        <div class="adaptive-box">Блок 3</div>
+    </div>
+</body>
+</html>
